@@ -360,7 +360,7 @@ header:target .cart-badge {
   height: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .product-container {
     grid-template-columns: 1fr;
   }
