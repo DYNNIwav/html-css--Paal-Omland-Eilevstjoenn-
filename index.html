@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
+    <title>Rainy Days</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/index.css" />
     <script
       src="https://kit.fontawesome.com/0d42989d58.js"
       crossorigin="anonymous"
     ></script>
   </head>
 
-  <body>
+  <body id="empty-cart-drawer-overlay">
     <header>
       <nav class="navbar">
         <div class="head-left">
@@ -56,7 +55,7 @@
             </a>
           </div>
           <div class="navbar-icons">
-            <a href="shopping-cart.html" aria-label="Shopping Cart">
+            <a href="#empty-cart-drawer-overlay" aria-label="Shopping Cart">
               <i class="fas fa-shopping-basket"></i>
             </a>
           </div>
@@ -65,35 +64,35 @@
           <i class="fas fa-bars"></i>
         </div>
       </nav>
+
+      <div class="empty-cart-drawer-overlay" id="empty-cart-drawer-overlay">
+        <div class="empty-cart-drawer" id="empty-cart-drawer">
+          <div class="close-cart">
+            <a href="#index">
+              <i class="fas fa-close"></i>
+            </a>
+          </div>
+          <div class="empty-cart-header">
+            <h2>Your cart is empty!</h2>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <main class="centered">
-      <form>
-        <fieldset class="sign-in">
-          <legend>Sign In</legend>
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="form_input"
-            required
-          />
-          <label for="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            class="form_input"
-            required
-          />
-          <a href="coming-soon.html">
-            <button type="button" class="sign-in-button">SIGN IN</button>
+    <main>
+      <div class="hero">
+        <h1 class="slogan">
+          Rainy Days keeps you comfortable, dry, and ready for adventure. We
+          design durable rain jackets for men and women who love exploring the
+          outdoors—no matter the weather.
+        </h1>
+        <div class="centered">
+          <a href="product-page.html" aria-label="Go to shop">
+            <button class="stay-dry-button">stay dry</button>
           </a>
-        </fieldset>
-      </form>
+        </div>
+      </div>
     </main>
-
     <a href="coming-soon.html">
       <img
         src="../assets/SVG/chat-box.svg"
@@ -117,7 +116,7 @@
             href="https://www.twitter.com"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Twitter"
+            aria-label="x aka Twitter"
           >
             <i class="fab fa-twitter"></i>
           </a>

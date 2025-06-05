@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coming soon</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/confirmation.css" />
     <script
       src="https://kit.fontawesome.com/0d42989d58.js"
       crossorigin="anonymous"
@@ -67,17 +66,29 @@
       </nav>
     </header>
 
-    <main class="centered">
-      <h1 class="coming-soon">COMING SOON</h1>
+    <a href="coming-soon.html">
+      <img
+        src="../assets/SVG/chat-box.svg"
+        class="chat-box"
+        aria-label="Contact us via chat"
+      />
+    </a>
 
-      <a href="coming-soon.html">
-        <img
-          src="../assets/SVG/chat-box.svg"
-          class="chat-box"
-          aria-label="Contact us via chat"
-        />
-      </a>
+    <main class="centered">
+      <div class="confirmation-container">
+        <div class="confirmation-message">
+          <h1><i class="fas fa-check"></i> Thank you for your order!</h1>
+          <h1>Order number: #12345</h1>
+          <h1>Shipping to:</h1>
+          <h2>John Doe</h2>
+          <h2>Country Roads, take me home</h2>
+        </div>
+        <a href="product-page.html">
+          <button class="continue-shopping">Continue Shopping</button>
+        </a>
+      </div>
     </main>
+
     <footer>
       <nav class="footer">
         <div class="foot-left">

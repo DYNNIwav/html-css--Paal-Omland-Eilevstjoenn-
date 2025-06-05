@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Storm</title>
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/product-detail-page.css" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/payment-details.css" />
     <script
       src="https://kit.fontawesome.com/0d42989d58.js"
       crossorigin="anonymous"
@@ -13,7 +13,7 @@
   </head>
 
   <body id="cart-drawer-overlay">
-    <header id="cart-badge">
+    <header>
       <nav class="navbar">
         <div class="head-left">
           <div class="search-icon">
@@ -84,14 +84,15 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="product-page.html">Shop</a></li>
-          <li aria-current="page">Storm</li>
+          <li><a href="product-detail-page.html">Storm</a></li>
+          <li aria-current="page">Payment</li>
         </ul>
       </nav>
 
       <div class="cart-drawer-overlay" id="cart-drawer-overlay">
         <div class="cart-drawer" id="cart-drawer">
           <div class="close-cart">
-            <a href="#product-detail-page">
+            <a href="#payment-details">
               <i class="fas fa-close"></i>
             </a>
           </div>
@@ -105,13 +106,17 @@
             <div class="cart-item-details">
               <h3 class="cart-title">Storm</h3>
               <div class="size-cart">
-                Size: <span class="size-button-cart">L</span>
+                <p>Size: <span class="size-button-cart">L</span></p>
               </div>
               <div class="color-cart">
-                Color:
-                <span class="color-button-cart"
-                  ><img src="../assets/SVG/Orange color.svg" alt="Orange color"
-                /></span>
+                <p>
+                  Color:
+                  <span class="color-button-cart"
+                    ><img
+                      src="../assets/SVG/Orange color.svg"
+                      alt="Orange color"
+                  /></span>
+                </p>
               </div>
             </div>
             <a href="#empty-cart-drawer-overlay">
@@ -137,120 +142,135 @@
         </div>
       </div>
 
-      <div class="product-container">
-        <div class="product-image">
+      <div class="payment-layout">
+        <!-- left-column   -->
+        <div class="product-section">
           <img
             src="../assets/images/RainyDays_Jacket1.jpg"
             alt="Storm Jacket"
             class="storm"
           />
+          <form>
+            <fieldset class="order-summary">
+              <legend>Order summary</legend>
+              <h3 class="order-title">Storm</h3>
+              <div class="summary-item-details">
+                <h4 class="size-header">
+                  Size: <span class="size-button">L</span>
+                </h4>
+                <h4 class="color-header">
+                  Color:
+                  <img
+                    src="../assets/SVG/Orange color.svg"
+                    alt="Orange color"
+                    class="color-icon"
+                  />
+                </h4>
+              </div>
+              <div class="summary-cost-details">
+                <h4>Shipping: Free</h4>
+                <h4>subtotal: $210</h4>
+              </div>
+            </fieldset>
+          </form>
         </div>
-        <div class="product-info">
-          <h1 class="jacket-title">Storm $210</h1>
-          <p class="product-slogan">For wild weather and wild souls</p>
-          <p class="size-guide">Size guide</p>
-          <div class="size-selector">
-            <label class="size-header">Size</label>
-            <div class="size-options">
-              <input type="radio" id="size-s" name="size" value="S" />
-              <label for="size-s" class="size-button">S</label>
 
-              <input type="radio" id="size-m" name="size" value="M" />
-              <label for="size-m" class="size-button">M</label>
+        <!-- right-column -->
+        <div class="checkout-section">
+          <a href="login-page.html">
+            <button class="sign-in-button">sign in</button>
+          </a>
+          <p>Or continue as guest</p>
 
-              <input type="radio" id="size-l" name="size" value="L" checked />
-              <label for="size-l" class="size-button">L</label>
+          <!-- shipping information -->
+          <form>
+            <fieldset class="shipping-info">
+              <legend>Shipping information</legend>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form_input"
+                required
+              />
+              <label for="country">Country</label>
+              <input
+                type="text"
+                id="country"
+                name="country"
+                class="form_input"
+                required
+              />
+              <label for="address">Address</label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                class="form_input"
+                required
+              />
+              <label for="postal-code">Postal Code</label>
+              <input
+                type="text"
+                id="postal-code"
+                name="postal-code"
+                class="form_input"
+                required
+              />
+              <label for="phone">Phone</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="form_input"
+                required
+              />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form_input"
+                required
+              />
+            </fieldset>
 
-              <input type="radio" id="size-xl" name="size" value="XL" />
-              <label for="size-xl" class="size-button">XL</label>
-            </div>
-          </div>
+            <!-- payment method -->
+            <fieldset class="payment-method">
+              <legend>Payment method</legend>
+              <div class="payment-icons-1">
+                <img src="../assets/SVG/Payment Method/Visa.svg" alt="visa" />
+                <img
+                  src="../assets/SVG/Payment Method/Mastercard.svg"
+                  alt="mastercard"
+                />
+                <img
+                  src="../assets/SVG/Payment Method/Amex.svg"
+                  alt="american express"
+                />
+              </div>
+              <div class="payment-icons-2">
+                <img
+                  src="../assets/SVG/Payment Method/Paypal.svg"
+                  alt="paypal"
+                />
+                <img
+                  src="../assets/SVG/Payment Method/ApplePay.svg"
+                  alt="apple pay"
+                />
+              </div>
+            </fieldset>
+          </form>
 
-          <p class="color-header">Color</p>
-          <ul class="color-options">
-            <li>
-              <button class="color-button" aria-label="Select color">
-                <img src="../assets/SVG/Orange color.svg" alt="orange color" />
-              </button>
-            </li>
-            <li>
-              <button class="color-button" aria-label="Select color">
-                <img src="../assets/SVG/Blue color.svg" alt="blue color" />
-              </button>
-            </li>
-          </ul>
-
-          <div class="quantity-selector">
-            <input
-              type="number"
-              id="quantity"
-              name="quantity"
-              value="1"
-              min="1"
-              max="10"
-            />
-          </div>
-          <div class="action-buttons">
-            <a href="#cart-badge">
-              <button class="add-to-cart">ADD TO CART</button>
+          <div class="place-order">
+            <a href="processing-payment.html">
+              <button class="place-order-button">place order</button>
             </a>
-            <div class="favorite-button">
-              <a href="coming-soon.html">
-                <i class="fas fa-heart"></i>
-              </a>
-            </div>
           </div>
-        </div>
-
-        <div class="why-buy">
-          <h3>WHY BUY STORM?</h3>
-          <ul class="buy-reasons">
-            <li><i class="fas fa-check"></i> Free shipping & returns</li>
-            <li><i class="fas fa-check"></i> 3-year warranty</li>
-            <li><i class="fas fa-check"></i> Designed in Norway</li>
-            <li><i class="fas fa-check"></i> 100% recycled fabrics</li>
-            <li>
-              <i class="fas fa-check"></i> Expert-tested for wild Nordic weather
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <h2 class="others-header">Others also purchased</h2>
-      <div class="others-section">
-        <div class="product-item">
-          <a href="coming-soon.html">
-            <img
-              src="../assets/images/RainyDays_Jacket7.jpg"
-              alt="Gløtt jacket"
-            />
-          </a>
-          <h3>Gløtt</h3>
-          <p>$135</p>
-        </div>
-        <div class="product-item">
-          <a href="coming-soon.html">
-            <img
-              src="../assets/images/RainyDays_Jacket5.jpg"
-              alt="Vinterhavn jacket"
-            />
-          </a>
-          <h3>Vinterhavn</h3>
-          <p>$170</p>
-        </div>
-        <div class="product-item">
-          <a href="coming-soon.html">
-            <img
-              src="../assets/images/RainyDays_Jacket6.jpg"
-              alt="Sagn jacket"
-            />
-          </a>
-          <h3>Sagn</h3>
-          <p>$160</p>
         </div>
       </div>
     </main>
-
     <footer>
       <nav class="footer">
         <div class="foot-left">
