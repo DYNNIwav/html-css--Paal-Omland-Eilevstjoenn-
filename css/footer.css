@@ -1,5 +1,3 @@
-@import url(./styles.css);
-
 footer {
   position: sticky;
   background-color: var(--color-primary);
