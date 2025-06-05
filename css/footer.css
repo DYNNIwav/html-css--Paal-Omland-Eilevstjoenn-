@@ -1,96 +1,92 @@
 @import url(styles.css);
 
 footer {
-    position: sticky;
-    background-color: var(--color-primary);
-    padding: 20px;
-    text-align: center;
-
-    
+  position: sticky;
+  background-color: var(--color-primary);
+  padding: 20px;
+  text-align: center;
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-.foot-left, .foot-center, .foot-right {
-    flex: 1;
+.foot-left,
+.foot-center,
+.foot-right {
+  flex: 1;
 }
 
 .foot-left {
-    display: flex;
-    justify-content: flex-start;
-    gap: 2rem;
-    font-size: 25px;
-
-    
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  font-size: 25px;
 }
-.foot-center {
-    display: flex;
-    justify-content: center;
 
+.foot-center {
+  display: flex;
+  justify-content: center;
 }
 
 .foot-right {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;  
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .foot-right ul li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .foot-right li:not(:last-child)::after {
-    content: " |";
+  content: " |";
 }
 
 @media screen and (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        display: flex;
-    }
+  .footer {
+    flex-direction: column;
+    display: flex;
+  }
 
-    .foot-left, .foot-center, .foot-right {
-        flex: 1;
-    }
+  .foot-left,
+  .foot-center,
+  .foot-right {
+    flex: 1;
+  }
 
-    .foot-left {
-        display: flex;
-        justify-content: center;
-    }
-    .foot-center {
-        display: flex;
-        justify-content: center;
-    }
+  .foot-left {
+    display: flex;
+    justify-content: center;
+  }
+  .foot-center {
+    display: flex;
+    justify-content: center;
+  }
 
-    .foot-right {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
+  .foot-right {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 
-    .foot-right ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-    }
+  .foot-right ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
 
-    .foot-right ul li {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .foot-right li:not(:last-child)::after {
+  .foot-right ul li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .foot-right li:not(:last-child)::after {
     content: "";
-}
-
-    
+  }
 }

@@ -9,58 +9,70 @@
     <title>Processing</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/processing-payment.css" />
-    <script src="https://kit.fontawesome.com/0d42989d58.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0d42989d58.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-  <header>
-    <nav class="navbar">
-      <div class="head-left">
-        <div class="search-icon">
-        <i class="fas fa-search"></i>
+    <header>
+      <nav class="navbar">
+        <div class="head-left">
+          <div class="search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <form
+            class="search-form"
+            method="get"
+            action="product-detail-page.html"
+          >
+            <input
+              class="search-text"
+              type="text"
+              required
+              placeholder="Search..."
+              aria-label="Search"
+            />
+          </form>
         </div>
-        <form class="search-form"  method="get" action="product-detail-page.html">
-          <input class="search-text" type="text" required placeholder="Search..." aria-label="Search" />
-        </form>
-      </div>
-      <div class="logo">
-        <a href="index.html">
-        <img src="../assets/images/RainyDays_Logo_white.png" class="logo" alt="Rainy Days Logo" />
-      </a>
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="../assets/images/RainyDays_Logo_white.png"
+              class="logo"
+              alt="Rainy Days Logo"
+            />
+          </a>
         </div>
 
         <div class="head-right">
           <div class="navbar-icons">
-        <a href="login-page.html" aria-label="Favorites">
-        <i class="fas fa-heart"></i>
-        </a>
+            <a href="login-page.html" aria-label="Favorites">
+              <i class="fas fa-heart"></i>
+            </a>
           </div>
           <div class="navbar-icons">
-        <a href="login-page.html" aria-label="User Profile">
-        <i class="fas fa-user"></i>
-        </a>
+            <a href="login-page.html" aria-label="User Profile">
+              <i class="fas fa-user"></i>
+            </a>
           </div>
           <div class="navbar-icons">
-        <a href="shopping-cart.html" aria-label="Shopping Cart">
-        <i class="fas fa-shopping-basket"></i>
-        </a>
+            <a href="shopping-cart.html" aria-label="Shopping Cart">
+              <i class="fas fa-shopping-basket"></i>
+            </a>
           </div>
-      
         </div>
         <div class="hamburger-menu">
           <i class="fas fa-bars"></i>
         </div>
-
-    </nav>
-    
-  </header>
-<main class="centered">
-  <div class="processing-container">
-    <h1 class="processing-header">Processing your payment..</h1>
-    <div class="spinner"></div>
-  </div>
-</main>
+      </nav>
+    </header>
+    <main class="centered">
+      <div class="processing-container">
+        <h1 class="processing-header">Processing your payment..</h1>
+        <div class="spinner"></div>
+      </div>
+    </main>
   </body>
-
- 
 </html>

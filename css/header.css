@@ -1,58 +1,58 @@
 @import url(styles.css);
 
 header {
-    width: 100%;
-    background-color: var(--color-primary);
-    padding: 20px;
-    color: white;
+  width: 100%;
+  background-color: var(--color-primary);
+  padding: 20px;
+  color: white;
 }
 
 /* check out how i can fix so the children inside navbar are their own boxes */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 25px;
 }
 
-.head-left, .logo, .head-right {
-    flex: 1;
+.head-left,
+.logo,
+.head-right {
+  flex: 1;
 }
 
 .logo {
-        display: flex; 
-        justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .logo img {
-    width: 200px;
-    height: auto;
-   
+  width: 200px;
+  height: auto;
 }
 
 .head-left {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .search-form input[type="text"] {
-    width: 100%;
-    padding: 16px;
-    border: none;
-    border-radius: 100px;
-    font-size: 16px;  
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 100px;
+  font-size: 16px;
 }
 
 .head-right {
-    display: flex;
-    justify-content: flex-end;;
-    gap: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
 }
 
-
-.search-icon{
-    display: none;
+.search-icon {
+  display: none;
 }
 
 .hamburger-menu {
@@ -63,46 +63,35 @@ header {
   header {
     padding: 10px;
   }
-  
-.navbar {
+
+  .navbar {
     display: flex;
     justify-content: space-between;
     flex: 1;
-}  
+  }
 
-.head-left {
+  .head-left {
     flex: none;
-}
+  }
 
-.head-right {
+  .head-right {
     display: none;
   }
-  
+
   .hamburger-menu {
     display: block;
     cursor: pointer;
   }
-  
+
   .logo img {
     width: 120px;
   }
 
-  
-
   .search-form {
     display: none;
   }
-.search-icon {
+  .search-icon {
     display: block;
     cursor: pointer;
-  } 
+  }
 }
-
-
-
-
-
-
-
-
-
