@@ -1,0 +1,39 @@
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./styles.css);
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+body form ul {
+    padding: 0;
+}
+
+.confirmation-message {
+    margin: 120px;
+}
+
+.continue-shopping {
+    background-color: #b3b1b1;
+    font-size: 14px;
+
+    color: black;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+}
+
+.confirmation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+

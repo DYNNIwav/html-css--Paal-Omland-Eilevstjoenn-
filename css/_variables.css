@@ -1,0 +1,11 @@
+/* Use this file to store your useful variables */
+/* This could be colors, fonts, or padding sizes! */
+
+:root {
+  --main-font: 'Lato', sans-serif;
+  --button-font: "Poppins", sans-serif, bold, uppercase;
+  --button-letter-spacing: 3.4px;
+  --h1-font: "Montserrat", sans-serif, bold;
+  --color-primary: #5d695b;
+
+}
