@@ -12,7 +12,7 @@
     ></script>
   </head>
 
-  <body>
+  <body id="empty-cart-drawer-overlay">
     <header>
       <nav class="navbar">
         <div class="head-left">
@@ -55,7 +55,7 @@
             </a>
           </div>
           <div class="navbar-icons">
-            <a href="shopping-cart.html" aria-label="Shopping Cart">
+            <a href="#empty-cart-drawer-overlay" aria-label="Shopping Cart">
               <i class="fas fa-shopping-basket"></i>
             </a>
           </div>
@@ -64,6 +64,19 @@
           <i class="fas fa-bars"></i>
         </div>
       </nav>
+
+      <div class="empty-cart-drawer-overlay" id="empty-cart-drawer-overlay">
+        <div class="empty-cart-drawer" id="empty-cart-drawer">
+          <div class="close-cart">
+            <a href="#index">
+              <i class="fas fa-close"></i>
+            </a>
+          </div>
+          <div class="empty-cart-header">
+            <h2>Your cart is empty!</h2>
+          </div>
+        </div>
+      </div>
     </header>
 
     <a href="coming-soon.html">
