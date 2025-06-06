@@ -58,20 +58,8 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  header {
-    padding: 10px;
-  }
-
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
-  }
-
-  .head-left,
-  .logo,
-  .head-right {
-    flex: 1;
+    font-size: 20px;
   }
 
   .head-left {
@@ -88,5 +76,6 @@ header {
 
   .search-form {
     display: flex;
+    width: 100px;
   }
 }
