@@ -14,11 +14,12 @@ body form ul {
 
 .confirmation-message {
   margin: 120px;
+  font-size: clamp(12px, 1vw, 18px);
 }
 
 .continue-shopping {
   background-color: #b3b1b1;
-  font-size: 14px;
+  font-size: clamp(10px, 1vw, 14px);
 
   color: black;
   border: none;

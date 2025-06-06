@@ -48,26 +48,27 @@ header {
   justify-content: flex-end;
   gap: 2rem;
 }
-
-.search-icon {
-  display: none;
-}
-
-.hamburger-menu {
-  display: none;
-}
-
 @media screen and (max-width: 768px) {
   .navbar {
-    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
   }
 
   .head-left {
-    flex: flex;
+    order: 3;
+    justify-content: center;
   }
 
   .head-right {
-    display: flex;
+    order: 2;
+    justify-content: flex-end;
+  }
+
+  .logo {
+    order: 1;
+    justify-content: flex-start;
   }
 
   .logo img {
@@ -76,6 +77,6 @@ header {
 
   .search-form {
     display: flex;
-    width: 100px;
+    width: 90vw;
   }
 }

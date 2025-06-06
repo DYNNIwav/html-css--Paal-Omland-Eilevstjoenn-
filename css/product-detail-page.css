@@ -227,7 +227,8 @@ body {
   right: 0;
   top: 148px;
   visibility: hidden;
-  transition: all 1.5s ease-in;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
 }
 
 .cart-drawer {
@@ -238,6 +239,7 @@ body {
 
 body:target .cart-drawer-overlay {
   visibility: visible;
+  opacity: 1;
 }
 
 .cart-items {
@@ -318,8 +320,10 @@ body:target .cart-drawer-overlay {
   border: none;
 
   font-size: 10px;
+  letter-spacing: 1px;
   padding: 10px;
   margin-bottom: 10px;
+  margin-left: 10px;
 
   cursor: pointer;
 }
@@ -330,6 +334,7 @@ body:target .cart-drawer-overlay {
   border: none;
 
   font-size: 10px;
+  letter-spacing: 1px;
   padding: 10px;
   margin-bottom: 10px;
 
@@ -382,5 +387,9 @@ header:target .cart-badge {
 
   .others-section {
     grid-template-columns: 1fr;
+  }
+
+  .cart-drawer-overlay {
+    top: 175px;
   }
 }

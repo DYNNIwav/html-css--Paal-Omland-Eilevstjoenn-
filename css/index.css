@@ -26,16 +26,15 @@ main {
 .hero {
   grid-row: 1 / -1;
   display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   align-items: center;
   justify-content: center;
 }
 
 .slogan {
-  grid-row: 1;
   color: white;
   background-color: rgba(93, 105, 91, 0.8);
-  font-size: clamp(14px, 3vw, 24px);
+  font-size: clamp(16px, 3vw, 26px);
   text-align: center;
   font-weight: 400;
   padding: 2% 0;
@@ -46,7 +45,6 @@ main {
 }
 
 .stay-dry-button {
-  grid-row: 2;
   color: black;
   background-color: rgba(179, 177, 177, 0.8);
   border-radius: 100px;

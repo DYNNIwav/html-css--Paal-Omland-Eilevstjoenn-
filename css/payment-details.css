@@ -35,19 +35,20 @@ body form ul {
   right: 0;
   top: 148px;
   visibility: hidden;
-  transition: all 0.5s ease-out;
+  opacity: 0;
 }
 
 .cart-drawer {
   display: flex;
   flex-direction: column;
-  width: 450px;
   background-color: #d9d9d9;
 }
 
 body:target .cart-drawer-overlay {
   position: absolute;
   visibility: visible;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
 }
 
 .cart-items {
@@ -72,6 +73,7 @@ body:target .cart-drawer-overlay {
   gap: 10px;
   font-size: 16px;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .size-button-cart {
@@ -127,8 +129,10 @@ body:target .cart-drawer-overlay {
   border: none;
 
   font-size: 10px;
+  letter-spacing: 1px;
   padding: 10px;
   margin-bottom: 10px;
+  margin-left: 10px;
 
   cursor: pointer;
 }
@@ -139,6 +143,7 @@ body:target .cart-drawer-overlay {
   border: none;
 
   font-size: 10px;
+  letter-spacing: 1px;
   padding: 10px;
   margin-bottom: 10px;
 
@@ -194,7 +199,7 @@ h4 {
   flex-direction: column;
 }
 
-.size-header {
+.size-header h4 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -220,10 +225,10 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
-.color-header {
+.color-header h4 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -328,5 +333,9 @@ h4 {
 
   .product-section {
     align-items: center;
+  }
+
+  .cart-drawer-overlay {
+    top: 175px;
   }
 }
