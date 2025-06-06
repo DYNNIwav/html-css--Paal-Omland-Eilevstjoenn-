@@ -216,8 +216,9 @@ body {
   flex-direction: column;
   align-items: flex-end;
   position: absolute;
-  right: -1000px;
+  right: 0;
   top: 148px;
+  visibility: hidden;
   transition: all 0.5s ease-out;
 }
 
@@ -230,7 +231,7 @@ body {
 
 body:target .cart-drawer-overlay {
   position: absolute;
-  right: 0;
+  visibility: visible;
 }
 
 .cart-items {
