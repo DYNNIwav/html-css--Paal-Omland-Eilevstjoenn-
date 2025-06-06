@@ -68,17 +68,18 @@ header {
     flex: 1;
   }
 
+  .head-left,
+  .logo,
+  .head-right {
+    flex: 1;
+  }
+
   .head-left {
-    flex: none;
+    flex: flex;
   }
 
   .head-right {
-    display: none;
-  }
-
-  .hamburger-menu {
-    display: block;
-    cursor: pointer;
+    display: flex;
   }
 
   .logo img {
@@ -86,10 +87,6 @@ header {
   }
 
   .search-form {
-    display: none;
-  }
-  .search-icon {
-    display: block;
-    cursor: pointer;
+    display: flex;
   }
 }

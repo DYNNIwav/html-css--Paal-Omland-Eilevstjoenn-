@@ -139,8 +139,16 @@ body {
 
   cursor: pointer;
 }
-.color-button:hover {
-  box-shadow: black solid 2px;
+
+.orange-color {
+  border: black solid 2px;
+  border-radius: 10px;
+  padding: 1px;
+  zoom: 1.1;
+}
+
+.blue-color {
+  opacity: 50%;
 }
 
 .quantity-selector input {
@@ -219,7 +227,7 @@ body {
   right: 0;
   top: 148px;
   visibility: hidden;
-  transition: all 0.5s ease-out;
+  transition: all 1.5s ease-in;
 }
 
 .cart-drawer {
@@ -230,7 +238,6 @@ body {
 }
 
 body:target .cart-drawer-overlay {
-  position: absolute;
   visibility: visible;
 }
 
@@ -330,10 +337,13 @@ body:target .cart-drawer-overlay {
   cursor: pointer;
 }
 
+/* cart badge in header  */
+
 .cart-badge {
   position: absolute;
-  right: -1000px;
-
+  right: -8px;
+  top: -8px;
+  visibility: hidden;
   font-size: 12px;
   padding: 5px 8px;
   border-radius: 100px;
@@ -348,6 +358,7 @@ header:target .cart-badge {
   position: absolute;
   right: -8px;
   top: -8px;
+  visibility: visible;
 }
 
 .close-cart {
