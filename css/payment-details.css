@@ -123,6 +123,12 @@ body:target .cart-drawer-overlay {
   margin-bottom: 40px;
 }
 
+.cart-footer-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 .continue-shopping {
   background-color: #b3b1b1;
   color: black;

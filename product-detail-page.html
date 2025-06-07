@@ -122,19 +122,17 @@
               <p>Shipping: Free</p>
               <p>Subtotal: $210</p>
             </div>
-            <button
-              onclick="window.location.href='product-page.html'"
-              class="continue-shopping"
-            >
-              Continue Shopping
-            </button>
+            <div class="cart-footer-buttons">
+              <form action="product-page.html" method="get">
+                <button class="continue-shopping">Continue Shopping</button>
+              </form>
 
-            <button
-              onclick="window.location.href='payment-details.html'"
-              class="to-checkout"
-            >
-              Proceed to Checkout <i class="fas fa-arrow-right"></i>
-            </button>
+              <form action="payment-details.html" method="get">
+                <button class="to-checkout">
+                  Proceed to Checkout <i class="fas fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -172,7 +170,7 @@
           <p class="color-header">Color</p>
           <ul class="color-options">
             <li>
-              <button class="color-button" aria-label="Select color">
+              <button class="color-button" aria-label="Select orange color">
                 <img
                   class="orange-color"
                   src="assets/SVG/orange-color.svg"
@@ -181,7 +179,10 @@
               </button>
             </li>
             <li>
-              <button class="color-button" aria-label="Select color">
+              <button
+                class="color-button"
+                aria-label="select blue color - currently sold out"
+              >
                 <img
                   class="blue-color"
                   src="assets/SVG/blue-color.svg"
@@ -203,12 +204,9 @@
             />
           </div>
           <div class="action-buttons">
-            <button
-              onclick="window.location.href='#cart-badge'"
-              class="add-to-cart"
-            >
-              ADD TO CART
-            </button>
+            <form action="#cart-badge" method="get">
+              <button class="add-to-cart">ADD TO CART</button>
+            </form>
 
             <div class="favorite-button">
               <a href="coming-soon.html" aria-label="Add to favorites">

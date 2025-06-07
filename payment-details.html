@@ -109,13 +109,11 @@
                 /></span>
               </div>
             </div>
-            <button
-              onclick="window.location.href='payment-details.html'"
-              class="remove-item"
-              aria-label="Remove item from cart"
-            >
-              Remove
-            </button>
+            <form action="payment-details.html" method="get">
+              <button class="remove-item" aria-label="Remove item from cart">
+                Remove
+              </button>
+            </form>
           </div>
           <p class="centered">–––––––––––––––––––––––––––––––––––––</p>
           <div class="cart-footer">
@@ -123,19 +121,17 @@
               <p>Shipping: Free</p>
               <p>Subtotal: $210</p>
             </div>
-            <button
-              onclick="window.location.href='product-page.html'"
-              class="continue-shopping"
-            >
-              Continue Shopping
-            </button>
+            <div class="cart-footer-buttons">
+              <form action="product-page.html" method="get">
+                <button class="continue-shopping">Continue Shopping</button>
+              </form>
 
-            <button
-              onclick="window.location.href='payment-details.html'"
-              class="to-checkout"
-            >
-              Proceed to Checkout <i class="fas fa-arrow-right"></i>
-            </button>
+              <form action="payment-details.html" method="get">
+                <button class="to-checkout">
+                  Proceed to Checkout <i class="fas fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -179,12 +175,9 @@
 
         <!-- right-column -->
         <div class="checkout-section">
-          <button
-            onclick="window.location.href='login-page.html'"
-            class="sign-in-button"
-          >
-            sign in
-          </button>
+          <form action="login-page.html" method="get">
+            <button class="sign-in-button">sign in</button>
+          </form>
 
           <p>Or continue as guest</p>
 
@@ -280,12 +273,9 @@
           </form>
 
           <div class="place-order">
-            <button
-              onclick="window.location.href='processing-payment.html'"
-              class="place-order-button"
-            >
-              place order
-            </button>
+            <form action="processing-payment.html" method="get">
+              <button class="place-order-button">place order</button>
+            </form>
           </div>
         </div>
       </div>

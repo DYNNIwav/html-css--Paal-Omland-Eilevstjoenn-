@@ -327,6 +327,12 @@ body:target .cart-drawer-overlay {
   cursor: pointer;
 }
 
+.cart-footer-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 .to-checkout {
   background-color: #b3b1b1;
   color: black;

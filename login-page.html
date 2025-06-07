@@ -75,36 +75,32 @@
     </header>
 
     <main class="centered">
-      <form>
-        <fieldset class="sign-in">
-          <legend>Sign In</legend>
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="form_input"
-            required
-          />
-          <label for="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            class="form_input"
-            required
-          />
-          <div>
-            <button
-              onclick="window.location.href='coming-soon.html'"
-              type="button"
-              class="sign-in-button"
-            >
-              SIGN IN
-            </button>
-          </div>
-        </fieldset>
-      </form>
+      <div class="sign-in-container">
+        <form>
+          <fieldset class="sign-in">
+            <legend>Sign In</legend>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form_input"
+              required
+            />
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form_input"
+              required
+            />
+          </fieldset>
+        </form>
+        <form action="coming-soon.html">
+          <button class="sign-in-button">SIGN IN</button>
+        </form>
+      </div>
     </main>
 
     <a href="coming-soon.html">

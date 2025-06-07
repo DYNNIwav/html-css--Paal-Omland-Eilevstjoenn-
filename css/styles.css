@@ -83,7 +83,7 @@ a {
 
   gap: 10px;
   width: 400px;
-  padding: 10px 50px;
+  padding: 20px 50px;
 }
 
 .sign-in-button {
@@ -92,6 +92,7 @@ a {
   color: black;
   border: none;
   border-radius: 5px;
+  margin-top: 20px;
 
   cursor: pointer;
 }
