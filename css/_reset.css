@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -7,4 +9,3 @@ body {
   min-height: 100vh;
   margin: 0;
 }
-
