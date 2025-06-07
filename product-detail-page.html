@@ -108,11 +108,13 @@
                 /></span>
               </div>
             </div>
-            <a href="product-detail-page.html">
-              <button class="remove-item" aria-label="Remove item from cart">
-                Remove
-              </button>
-            </a>
+            <button
+              onclick="window.location.href='product-detail-page.html'"
+              class="remove-item"
+              aria-label="Remove item from cart"
+            >
+              Remove
+            </button>
           </div>
           <p class="centered">–––––––––––––––––––––––––––––––––––––</p>
           <div class="cart-footer">
@@ -120,13 +122,19 @@
               <p>Shipping: Free</p>
               <p>Subtotal: $210</p>
             </div>
-            <a href="product-page.html"
-              ><button class="continue-shopping">Continue Shopping</button></a
+            <button
+              onclick="window.location.href='product-page.html'"
+              class="continue-shopping"
             >
-            <a href="payment-details.html"
-              ><button class="to-checkout">
-                Proceed to Checkout <i class="fas fa-arrow-right"></i></button
-            ></a>
+              Continue Shopping
+            </button>
+
+            <button
+              onclick="window.location.href='payment-details.html'"
+              class="to-checkout"
+            >
+              Proceed to Checkout <i class="fas fa-arrow-right"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -194,9 +202,13 @@
             />
           </div>
           <div class="action-buttons">
-            <a href="#cart-badge">
-              <button class="add-to-cart">ADD TO CART</button>
-            </a>
+            <button
+              onclick="window.location.href='#cart-badge'"
+              class="add-to-cart"
+            >
+              ADD TO CART
+            </button>
+
             <div class="favorite-button">
               <a href="coming-soon.html">
                 <i class="fas fa-heart"></i>

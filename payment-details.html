@@ -109,11 +109,13 @@
                 /></span>
               </div>
             </div>
-            <a href="#empty-cart-drawer-overlay">
-              <button class="remove-item" aria-label="Remove item from cart">
-                Remove
-              </button>
-            </a>
+            <button
+              onclick="window.location.href='payment-details.html'"
+              class="remove-item"
+              aria-label="Remove item from cart"
+            >
+              Remove
+            </button>
           </div>
           <p class="centered">–––––––––––––––––––––––––––––––––––––</p>
           <div class="cart-footer">
@@ -121,13 +123,19 @@
               <p>Shipping: Free</p>
               <p>Subtotal: $210</p>
             </div>
-            <a href="product-page.html"
-              ><button class="continue-shopping">Continue Shopping</button></a
+            <button
+              onclick="window.location.href='product-page.html'"
+              class="continue-shopping"
             >
-            <a href="payment-details.html"
-              ><button class="to-checkout">
-                Proceed to Checkout <i class="fas fa-arrow-right"></i></button
-            ></a>
+              Continue Shopping
+            </button>
+
+            <button
+              onclick="window.location.href='payment-details.html'"
+              class="to-checkout"
+            >
+              Proceed to Checkout <i class="fas fa-arrow-right"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -171,9 +179,13 @@
 
         <!-- right-column -->
         <div class="checkout-section">
-          <a href="login-page.html">
-            <button class="sign-in-button">sign in</button>
-          </a>
+          <button
+            onclick="window.location.href='login-page.html'"
+            class="sign-in-button"
+          >
+            sign in
+          </button>
+
           <p>Or continue as guest</p>
 
           <!-- shipping information -->
@@ -268,9 +280,12 @@
           </form>
 
           <div class="place-order">
-            <a href="processing-payment.html">
-              <button class="place-order-button">place order</button>
-            </a>
+            <button
+              onclick="window.location.href='processing-payment.html'"
+              class="place-order-button"
+            >
+              place order
+            </button>
           </div>
         </div>
       </div>
