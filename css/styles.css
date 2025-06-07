@@ -63,6 +63,7 @@ body {
   right: 10px;
   bottom: 200px;
   margin-bottom: 20px;
+  z-index: 1001;
 }
 .chat-box :hover {
   cursor: pointer;
@@ -103,28 +104,31 @@ a {
   right: 0;
   top: 148px;
   visibility: hidden;
-  transition: all 0.5s ease-out;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
 }
 
 .empty-cart-drawer {
   display: flex;
   flex-direction: column;
-  width: min(450px, 90vw);
-  height: 350px;
+  width: 504px;
+  height: 377px;
   background-color: #d9d9d9;
+  z-index: 1000;
+  position: relative;
 }
 
-.empty-cart-drawer h2 {
+.empty-cart-header {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  flex: auto;
+  text-align: center;
   color: black;
 }
 
 .close-cart {
-  display: flex;
+  position: absolute;
   padding: 10px;
   color: black;
 }
@@ -132,6 +136,7 @@ a {
 body:target .empty-cart-drawer-overlay {
   position: absolute;
   visibility: visible;
+  opacity: 1;
 }
 
 /* always used  */
@@ -164,4 +169,14 @@ button {
 
 :hover {
   transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .empty-cart-drawer-overlay {
+    top: 175px;
+  }
+
+  .empty-cart-drawer {
+    max-width: 100vw;
+  }
 }
