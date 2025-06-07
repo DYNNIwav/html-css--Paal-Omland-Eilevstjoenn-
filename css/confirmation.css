@@ -14,7 +14,8 @@ body form ul {
 
 .confirmation-message {
   margin: 120px;
-  font-size: clamp(12px, 1vw, 18px);
+  font-size: clamp(10px, 1vw, 18px);
+  text-align: start;
 }
 
 .continue-shopping {
@@ -28,9 +29,7 @@ body form ul {
   margin-bottom: 20px;
 }
 
-.confirmation-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.continue-shopping:hover {
+  background-color: var(--color-primary);
+  color: white;
 }
