@@ -174,7 +174,7 @@ body {
   cursor: pointer;
 }
 .add-to-cart:hover {
-  background-color: #5d695b;
+  background-color: var(--color-primary);
   color: white;
 }
 
