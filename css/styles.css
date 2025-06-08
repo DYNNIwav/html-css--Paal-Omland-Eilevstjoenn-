@@ -24,6 +24,12 @@ body {
   overflow-x: hidden;
 }
 
+/* for keyboard accessability black for white background and white for other color */
+a[href="coming-soon.html"]:focus .chat-box {
+  outline: 2px solid white;
+  border: 2px solid black;
+}
+
 .centered {
   display: flex;
   justify-content: center;

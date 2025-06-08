@@ -90,7 +90,8 @@ body {
 }
 
 .size-options input[type="radio"] {
-  display: none;
+  opacity: 0;
+  position: absolute;
 }
 
 .size-button {
