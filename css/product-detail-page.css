@@ -1,6 +1,4 @@
 @import url(./styles.css);
-@import url(./header.css);
-@import url(./footer.css);
 
 html,
 body {
@@ -92,6 +90,12 @@ body {
 .size-options input[type="radio"] {
   opacity: 0;
   position: absolute;
+}
+
+.size-button:focus {
+  outline: 2px solid black;
+  outline-offset: 2px;
+  border: 2px solid black;
 }
 
 .size-button {

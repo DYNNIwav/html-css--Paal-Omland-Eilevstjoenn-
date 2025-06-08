@@ -1,6 +1,4 @@
 @import url(./styles.css);
-@import url(./header.css);
-@import url(./footer.css);
 
 html,
 body {
@@ -14,13 +12,13 @@ body form ul {
 
 .confirmation-message {
   margin: 120px;
-  font-size: clamp(10px, 1vw, 18px);
+  font-size: clamp(16px, 1vw, 20px);
   text-align: start;
 }
 
 .continue-shopping {
   background-color: #b3b1b1;
-  font-size: clamp(10px, 1vw, 14px);
+  font-size: clamp(14px, 1vw, 18px);
 
   color: black;
   border: none;

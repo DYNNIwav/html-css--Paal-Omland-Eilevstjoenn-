@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Storm rain jacket. - $210, durable, waterproof jacket designed for wild nordic weather. 3 year warranty."
+    />
     <title>Storm</title>
-    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/product-detail-page.css" />
     <script
       src="https://kit.fontawesome.com/0d42989d58.js"
@@ -65,7 +68,7 @@
       </nav>
     </header>
 
-    <a href="coming-soon.html" tabindex="0">
+    <a href="coming-soon.html" tabindex="0" title="Contact us">
       <img
         src="assets/SVG/chat-box.svg"
         class="chat-box"
@@ -108,13 +111,11 @@
                 /></span>
               </div>
             </div>
-            <button
-              onclick="window.location.href='product-detail-page.html'"
-              class="remove-item"
-              aria-label="Remove item from cart"
-            >
-              Remove
-            </button>
+            <form action="product-detail-page.html" method="get">
+              <button class="remove-item" aria-label="Remove item from cart">
+                Remove
+              </button>
+            </form>
           </div>
           <p class="centered">–––––––––––––––––––––––––––––––––––––</p>
           <div class="cart-footer">
@@ -153,16 +154,41 @@
           <div class="size-selector">
             <label class="size-header">Size</label>
             <div class="size-options">
-              <input type="radio" id="size-s" name="size" value="S" />
+              <input
+                type="radio"
+                id="size-s"
+                name="size"
+                value="S"
+                aria-label="small"
+              />
               <label for="size-s" class="size-button">S</label>
 
-              <input type="radio" id="size-m" name="size" value="M" />
+              <input
+                type="radio"
+                id="size-m"
+                name="size"
+                value="M"
+                aria-label="medium"
+              />
               <label for="size-m" class="size-button">M</label>
 
-              <input type="radio" id="size-l" name="size" value="L" checked />
+              <input
+                type="radio"
+                id="size-l"
+                name="size"
+                value="L"
+                checked
+                aria-label="large"
+              />
               <label for="size-l" class="size-button">L</label>
 
-              <input type="radio" id="size-xl" name="size" value="XL" />
+              <input
+                type="radio"
+                id="size-xl"
+                name="size"
+                value="XL"
+                aria-label="extra large"
+              />
               <label for="size-xl" class="size-button">XL</label>
             </div>
           </div>
@@ -209,7 +235,11 @@
             </form>
 
             <div class="favorite-button">
-              <a href="coming-soon.html" aria-label="Add to favorites">
+              <a
+                href="coming-soon.html"
+                aria-label="Add to favorites"
+                title="Add to favorites"
+              >
                 <i class="fas fa-heart"></i>
               </a>
             </div>

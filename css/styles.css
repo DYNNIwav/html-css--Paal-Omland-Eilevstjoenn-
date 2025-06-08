@@ -4,6 +4,8 @@
 /* These are marked with an underscore: */
 @import url("./_variables.css");
 /* Feel free to add as many of these imports as you need */
+@import url("./header.css");
+@import url("./footer.css");
 
 main {
   flex-grow: 1;
@@ -103,6 +105,8 @@ a {
   cursor: pointer;
 }
 
+/* empty cart for all of the pages except product-detail-page and payment-details */
+
 .empty-cart-drawer-overlay {
   display: flex;
   flex-direction: column;
@@ -135,7 +139,6 @@ a {
 }
 
 .close-cart {
-  position: absolute;
   padding: 10px;
   color: black;
 }
@@ -144,6 +147,137 @@ body:target .empty-cart-drawer-overlay {
   position: absolute;
   visibility: visible;
   opacity: 1;
+}
+
+/* cart with item for product-detail-page and payment-details */
+
+.cart-drawer-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  right: 0;
+  top: 148px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.cart-drawer {
+  display: flex;
+  flex-direction: column;
+  background-color: #d9d9d9;
+}
+
+body:target .cart-drawer-overlay {
+  position: absolute;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.cart-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-image {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  margin-left: 28px;
+  margin-right: 10px;
+}
+
+.size-cart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.size-button-cart {
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+}
+
+.color-cart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.color-cart img {
+  width: 30px;
+  height: auto;
+}
+
+.remove-item {
+  background-color: #b3b1b1;
+  color: black;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.remove-item:hover {
+  background-color: red;
+  color: white;
+}
+
+.cart-total {
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.cart-footer-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.continue-shopping {
+  background-color: #b3b1b1;
+  color: black;
+  border: none;
+
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+
+  cursor: pointer;
+}
+
+.to-checkout {
+  background-color: #b3b1b1;
+  color: black;
+  border: none;
+
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  cursor: pointer;
 }
 
 /* always used  */
