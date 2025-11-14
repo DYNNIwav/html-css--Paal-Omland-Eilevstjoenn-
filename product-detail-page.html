@@ -13,9 +13,11 @@
       src="https://kit.fontawesome.com/0d42989d58.js"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="javascript/product-detail-page.js"></script>
   </head>
 
   <body id="cart-drawer-overlay">
+    <div id="loader" style="display: none"></div>
     <header id="cart-badge">
       <nav class="navbar">
         <div class="head-left">
@@ -81,7 +83,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="product-page.html">Shop</a></li>
-          <li aria-current="page">Storm</li>
+          <li id="breadcrumb-current" aria-current="page"></li>
         </ul>
       </nav>
 
@@ -93,11 +95,7 @@
             </a>
           </div>
           <div class="cart-items">
-            <img
-              src="assets/images/RainyDays_Jacket1.jpg"
-              alt="Storm Jacket"
-              class="cart-image"
-            />
+            <img id="cart-image" />
 
             <div class="cart-item-details">
               <h3 class="cart-title">Storm</h3>
@@ -141,15 +139,21 @@
       <div class="product-container">
         <div class="product-image">
           <img
+            id="jacket-image"
             src="assets/images/RainyDays_Jacket1.jpg"
             alt="Storm Jacket"
             class="storm"
           />
         </div>
         <div class="product-info">
-          <h1 class="jacket-title">Storm $210</h1>
-          <p class="product-slogan">For wild weather and wild souls</p>
-          <a href="coming-soon.html"> <p class="size-guide">Size guide</p> </a>
+          <h1 class="jacket-title" id="jacket-title">Storm</h1>
+          <h2 class="jacket-price" id="jacket-price">$210</h2>
+          <p class="product-slogan" id="jacket-description">
+            For wild weather and wild souls
+          </p>
+          <a href="coming-soon.html">
+            <p class="size-guide" id="jacket-size-guide">Size guide</p>
+          </a>
 
           <div class="size-selector">
             <label class="size-header">Size</label>
@@ -247,7 +251,7 @@
         </div>
 
         <div class="why-buy">
-          <h3>WHY BUY STORM?</h3>
+          <h3 id="why-buy-header">WHY BUY STORM?</h3>
           <ul class="buy-reasons">
             <li><i class="fas fa-check"></i> Free shipping & returns</li>
             <li><i class="fas fa-check"></i> 3-year warranty</li>

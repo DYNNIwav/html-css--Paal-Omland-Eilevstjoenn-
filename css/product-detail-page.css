@@ -233,6 +233,7 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: all 0.2s ease-in-out;
+  z-index: 100;
 }
 
 .cart-drawer {
@@ -305,7 +306,7 @@ body:target .cart-drawer-overlay {
   border: none;
   border-radius: 100px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .remove-item:hover {

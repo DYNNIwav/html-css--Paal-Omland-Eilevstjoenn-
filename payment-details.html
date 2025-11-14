@@ -13,6 +13,8 @@
       src="https://kit.fontawesome.com/0d42989d58.js"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="javascript/payment-details.js"></script>
+    <script type="module" src="javascript/cart-init.js"></script>
   </head>
 
   <body id="cart-drawer-overlay">
@@ -81,7 +83,11 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="product-page.html">Shop</a></li>
-          <li><a href="product-detail-page.html">Storm</a></li>
+          <li id="breadcrumb-previous-page">
+            <a href="javascript:void(0);" onclick="window.history.back()"
+              >${getCart()[0].title.replace("Rainy Days", "")}</a
+            >
+          </li>
           <li aria-current="page">Payment</li>
         </ul>
       </nav>

@@ -13,9 +13,10 @@
       src="https://kit.fontawesome.com/0d42989d58.js"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="javascript/cart-init.js"></script>
   </head>
 
-  <body id="empty-cart-drawer-overlay">
+  <body id="cart-drawer-overlay">
     <header>
       <nav class="navbar">
         <div class="head-left">
@@ -55,28 +56,69 @@
             </a>
           </div>
           <div class="navbar-icons">
-            <a href="#empty-cart-drawer-overlay" aria-label="Shopping Cart">
+            <a
+              class="cart-button"
+              href="#cart-drawer-overlay"
+              aria-label="Shopping Cart"
+            >
               <i class="fas fa-shopping-basket"></i>
+              <span class="cart-badge">1</span>
             </a>
           </div>
         </div>
       </nav>
+    </header>
 
-      <div class="empty-cart-drawer-overlay">
-        <div class="empty-cart-drawer" id="empty-cart-drawer">
+    <main>
+      <div class="cart-drawer-overlay">
+        <div class="cart-drawer" id="cart-drawer">
           <div class="close-cart">
             <a href="#" aria-label="close cart button">
               <i class="fas fa-close"></i>
             </a>
           </div>
-          <div class="empty-cart-header">
-            <h2>Your cart is empty!</h2>
+          <div class="cart-items">
+            <img id="cart-image" />
+
+            <div class="cart-item-details">
+              <h3 class="cart-title">Storm</h3>
+              <div class="size-cart">
+                Size: <span class="size-button-cart">L</span>
+              </div>
+              <div class="color-cart">
+                Color:
+                <span class="color-button-cart"
+                  ><img src="assets/SVG/orange-color.svg" alt="Orange color"
+                /></span>
+              </div>
+            </div>
+            <form action="product-detail-page.html" method="get">
+              <button class="remove-item" aria-label="Remove item from cart">
+                Remove
+              </button>
+            </form>
+          </div>
+          <p class="centered">–––––––––––––––––––––––––––––––––––––</p>
+          <div class="cart-footer">
+            <div class="cart-total">
+              <p>Shipping: Free</p>
+              <p>Subtotal: $210</p>
+            </div>
+            <div class="cart-footer-buttons">
+              <form action="product-page.html" method="get">
+                <button class="continue-shopping">Continue Shopping</button>
+              </form>
+
+              <form action="payment-details.html" method="get">
+                <button class="to-checkout">
+                  Proceed to Checkout <i class="fas fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </header>
 
-    <main>
       <div class="hero">
         <h1 class="slogan">
           Rainy Days keeps you comfortable, dry, and ready for adventure. We
