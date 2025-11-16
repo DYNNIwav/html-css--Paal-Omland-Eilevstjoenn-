@@ -1,5 +1,5 @@
-import { fetchJackets, fetchJacketById } from './api.js';
-import { showLoading, hideLoading } from './utils.js';
+import { fetchJackets } from './api.js';
+import { showLoading, hideLoading, showError } from './utils.js';
 import { updateCartBadge, displayCart } from './cart.js';
 
 
@@ -68,7 +68,7 @@ function filterByGender(gender) {
 function filter() {
     const filterButtons = document.querySelectorAll('.filter-tag');
 
-    
+
 
     if (filterButtons.length === 0 )
 {

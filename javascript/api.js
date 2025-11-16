@@ -8,7 +8,6 @@ export async function fetchJackets() {
         const data = await response.json();
         return data.data;
     } catch (error) {
-        console.error('Error fetching jackets:', error);
         alert('There was an error fetching the jackets. Please try again later.' + error);
     }
 }
@@ -22,7 +21,6 @@ export async function fetchJacketById(id) {
         const data = await response.json();
         return data.data;
     } catch (error) {
-        console.error('Error fetching jacket:', error);
         alert('There was an error fetching the jacket. Please try again later.' + error);
     }
 

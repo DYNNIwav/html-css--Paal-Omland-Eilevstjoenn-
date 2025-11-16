@@ -44,7 +44,6 @@ async function init() {
         updateCartBadge();
     } catch (error) {
         alert('unable to load jacket details. Sorry for the inconvenience.');
-        console.error('Error fetching jacket:', error);
     } finally {
         hideLoading();
     }
@@ -55,12 +54,12 @@ init();
 
 function AddToCartButton(jacket) {
     const addToCartButton = document.querySelector('.add-to-cart');
-    const quantityInput = document.getElementById('quantity');
-    const quantity = quantityInput ? parseInt(quantityInput.value, 10) : 1;
     if (addToCartButton) {
         addToCartButton.addEventListener('click', (e) => { 
-        e.preventDefault();    
-        
+            e.preventDefault();    
+            
+            const quantityInput = document.getElementById('quantity');
+            const quantity = quantityInput ? parseInt(quantityInput.value, 10) : 1;
 
         const cartItem = {
             id: jacket.id,

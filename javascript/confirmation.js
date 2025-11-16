@@ -21,7 +21,7 @@ let orderedItems = '';
     if (cart.length > 0) {
         orderedItems = '<h3>Items ordered:</h3><ul>';
         cart.forEach(item => {
-            orderedItems += `<img src="${item.image}" alt="${item.title}" class="cart-image"> <li>${item.title} <span>(x${item.quantity || 1})</span> <br> Price: $${item.price * (item.quantity || 1).toFixed(2)}</li>`;
+            orderedItems += `<img src="${item.image}" alt="${item.title}" class="cart-image"> <li>${item.title} <span>(x${item.quantity || 1})</span> <br> Price: $${(item.price * (item.quantity || 1).toFixed(2))}</li>`;
         });
         orderedItems += `</ul>
         <p>Total: $${getCartTotal().toFixed(2)}</p>`;
@@ -35,4 +35,4 @@ let orderedItems = '';
 }
 
 confirmation();
-// localStorage.removeItem('cart');
+localStorage.removeItem('cart');
