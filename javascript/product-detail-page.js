@@ -1,5 +1,5 @@
 import { fetchJacketById } from './api.js';
-import { showLoading, hideLoading } from './utils.js';
+import { showLoading, hideLoading, showToast } from './utils.js';
 import { addToCart, updateCartBadge, displayCart } from './cart.js';
 
 function getJacketIdFromUrl() {
@@ -34,7 +34,7 @@ async function init() {
     try {
         const jacketId = getJacketIdFromUrl();
         if (!jacketId) {
-            alert('No jacket ID found in the URL');
+            showToast('No jacket ID found in the URL', 'error');
             return;
         }
 
@@ -43,7 +43,7 @@ async function init() {
         CartDrawerOverlay();
         updateCartBadge();
     } catch (error) {
-        alert('unable to load jacket details. Sorry for the inconvenience.');
+        showToast('Unable to load jacket details. Sorry for the inconvenience.', 'error');
     } finally {
         hideLoading();
     }
@@ -71,7 +71,7 @@ function AddToCartButton(jacket) {
             quantity: quantity,
         };
         addToCart(cartItem);
-        alert(`${jacket.title} was added to your cart`);
+        showToast(`${jacket.title} was added to your cart`);
         updateCartBadge();
         });
     }

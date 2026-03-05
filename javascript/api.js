@@ -1,3 +1,4 @@
+import { showToast } from './utils.js';
 
 export async function fetchJackets() {
     try {
@@ -8,7 +9,7 @@ export async function fetchJackets() {
         const data = await response.json();
         return data.data;
     } catch (error) {
-        alert('There was an error fetching the jackets. Please try again later.' + error);
+        showToast('There was an error fetching the jackets. Please try again later.', 'error');
     }
 }
 
@@ -21,7 +22,7 @@ export async function fetchJacketById(id) {
         const data = await response.json();
         return data.data;
     } catch (error) {
-        alert('There was an error fetching the jacket. Please try again later.' + error);
+        showToast('There was an error fetching the jacket. Please try again later.', 'error');
     }
 
 }
