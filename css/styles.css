@@ -181,6 +181,7 @@ body:target .empty-cart-drawer-overlay {
 .cart-drawer {
   display: flex;
   flex-direction: column;
+  width: 504px;
   background-color: #d9d9d9;
 }
 
@@ -332,7 +333,7 @@ button {
 
 .toast {
   position: fixed;
-  top: 20px;
+  top: 180px;
   left: 50%;
   transform: translateX(-50%);
   padding: 12px 24px;
